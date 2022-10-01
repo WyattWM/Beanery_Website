@@ -4,13 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>beanery</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quod, ipsum
-      earum molestias recusandae, dolorem porro ab iusto odio fugiat saepe fuga
-      perferendis veniam beatae quisquam ducimus deserunt, excepturi autem.
-    </p>
+    <seciton id="banner">
+      <div class="banner-text">
+        <img src="images/8.png" class="logo" />
+        <h3>make your mornings better</h3>
+        <div class="banner-btn">
+          <a href="#">About Us</a>
+          <a href="#">Shop</a>
+        </div>
+      </div>
+    </seciton>
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">SOCIAL MEDIA</a></li>
+          <li><a href="#">LOCATIONS</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/menu.png" class="menu">
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function (){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{ sideNav.style.right = "-250px";
+        }
+    }
+    </script>
+
   </body>
 </html>
