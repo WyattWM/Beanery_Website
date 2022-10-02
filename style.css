@@ -7,10 +7,11 @@
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), black),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), black),
     url("images/coffeeplants.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
@@ -18,10 +19,14 @@ h3, nav {
   font-family: 'Quicksand', sans-serif;
 }
 
+h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
 
 .logo {
    height: 400px;
-   margin-top: 10%;
+   margin-top: 5%;
    margin-left: 10%;
    margin-right: 10%;
 }
@@ -34,6 +39,13 @@ h3, nav {
 .banner-text h3{
     font-size: 90px;
     color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.banner-text, p {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .banner-btn {
@@ -96,4 +108,200 @@ nav, ul, li, a {
 .menu{
     width: 20px;
     margin-top: 15px;
+}
+
+@media screen and (max-width: 770px) {
+    .banner-text h3{
+        font-size: 33px;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        margin-right: 10%;
+        margin-left: 10%;
+}
+}
+
+@media screen and (max-width: 770px) {
+    .logo {
+        height: 100px;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+}
+}
+
+@media screen and (max-width: 770px) {
+    .banner-btn a {
+        width: 100px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 10px;
+        padding: 12px 0;
+        color: white;
+        border: .5px solid white;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 12px;
+        position: center;
+    }
+}
+
+/*--feature--*/
+
+#feature {
+    width: 100%;
+    padding: 70px 0;
+    margin-top: 400px;
+}
+
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title-text, p {
+    margin: auto;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+#feature, p {
+    color: #9B6948;
+}
+
+.title-text, h3 {
+    font-size: 50px;
+}
+
+.feature-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.features {
+    flex-basis: 50%;
+}
+
+.features-img {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.features h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: black;
+}
+
+.features-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.features-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: grey;
+    border: 2px solid grey;
+}
+
+.features-text p {
+    padding: 0 20px;
+    text-align: initial;
+}
+
+@media screen and (max-width: 770px) {
+    .title-text, h3 {
+        font-size: 35px;
+    }
+    .features {
+        flex-basis: 200%;
+    }
+    .features-img {
+        flex-basis: 200%;
+        margin: auto;
+    }
+    .features-img img {
+        width: 100%;
+    }
+    #feature {
+        width: 100%;
+        padding: 20px 0;
+        margin-top: 150px;
+    }
+}
+
+/*--service--*/
+
+#service {
+    width: 100%;
+    padding: 20px 0;
+    background-color: lightgrey;
+}
+
+.service-box {
+    width: 100;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.single-service {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.single-service, img[src="images/pic-1.jpg"] {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.single-service, img[src="images/pic-2.jpg"] {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.single-service, img[src="images/pic-3.jpg"] {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.single-service, img[src="images/pic-4.jpg"] {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.service-desc {
+    width: 80%;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+hr {
+    background: white;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
 }
